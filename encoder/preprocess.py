@@ -180,5 +180,6 @@ def preprocess_custom_data(datasets_root: Path, out_dir: Path, skip_existing=Fal
     if not dataset_root:
         return
     speaker_dirs = list(dataset_root.glob("*"))
-    print(speaker_dirs)
+    _preprocess_speaker_dirs(speaker_dirs, dataset_name, datasets_root, out_dir, "wav",
+                                 skip_existing, logger)
 
