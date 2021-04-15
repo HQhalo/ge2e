@@ -173,3 +173,12 @@ def preprocess_voxceleb2(datasets_root: Path, out_dir: Path, skip_existing=False
     speaker_dirs = list(dataset_root.joinpath("dev", "aac").glob("*"))
     _preprocess_speaker_dirs(speaker_dirs, dataset_name, datasets_root, out_dir, "m4a",
                              skip_existing, logger)
+
+def preprocess_custom_data(datasets_root: Path, out_dir: Path, skip_existing=False):
+    dataset_name = "zalo"
+    dataset_root, logger = _init_preprocess_dataset(dataset_name, datasets_root, out_dir)
+    if not dataset_root:
+        return
+    speaker_dirs = list(dataset_root.glob("*"))
+    print(speaker_dirs)
+
