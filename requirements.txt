@@ -8,3 +8,4 @@ sounddevice
 SoundFile
 multiprocess
 webrtcvad
+umap-learn
