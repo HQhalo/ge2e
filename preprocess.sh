@@ -1,0 +1,1 @@
+python3 encoder_preprocess.py --datasets_root /content --datasets zalo --out_dir /content/preprocess_data

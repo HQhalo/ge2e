@@ -1,0 +1,1 @@
+python3 encoder_train.py --run_id pretrained_0001 --clean_data_root /content/preprocess_data -m /content/drive/MyDrive/colabdrive/Thesis/saved_models
